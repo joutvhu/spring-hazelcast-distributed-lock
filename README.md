@@ -1,6 +1,6 @@
 # Spring Hazelcast Distributed Lock
 
-Example of distributed locking implementation using Hazelcast in a project and Spring Boot
+Example of distributed locking implementation using Hazelcast in a Spring Boot project.
 
 ## Runing
 
