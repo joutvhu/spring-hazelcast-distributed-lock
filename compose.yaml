@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  instance-01:
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - "8081:8080"
+    networks:
+      - distributed-lock
+
+  instance-02:
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - "8082:8080"
+    networks:
+      - distributed-lock
+
+networks:
+  distributed-lock:
+    driver: bridge
